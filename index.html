@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Challenge ONE</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="assets/logo.svg" alt="Logo Alura">
+    </header>
+
+    <main>
+        <section>
+            <div class="div__texto">
+                <textarea placeholder="Digite seu texto" rows="4" cols="41" class="textarea__texto"></textarea>
+            </div>
+            <div class="div__aviso">
+                <img src="assets/aviso.svg" alt="Mensagem de aviso">
+            </div>
+            <div class="div__botoes__criptografia">
+                <button class="botao__criptografar" onclick="botaoCriptografar()">Criptografar</button>
+                <button class="botao__descriptografar" onclick="botaoDescriptografar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="div__texto__criptografado">
+                <img src="assets/boneco.svg" class="boneco" alt="Imagem do boneco">
+                <h2>Nenhuma mensagem <br> encontrada</h2>
+                <p>Digite um texto que você deseja <br> criptografar ou descriptografar</p>
+            </div>
+            <button class="botao__copiar" onclick="copia()" style="display: none;">Copiar</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por Matheus Barbosa</p>
+    </footer> 
+    <script src="script.js"></script> 
+</body>
+</html>
